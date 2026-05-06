@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './auth.css'
 
 function Login() {
@@ -37,7 +38,7 @@ function Login() {
                             <form className="mt-4" onSubmit={handleSubmit}>
                                 <input className="mt-4 pb-2" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/><br/>
                                 <input className="mt-4 pb-2" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/><br/>
-                                 <p className="mt-4">Don't have an account? <a href="/register">Register</a></p>
+                                 <p className="mt-4">Don't have an account? <Link to="/register">Register</Link></p>
                                 <button className="mt-4 mb-2" type="submit">Login</button>
                             </form>                              
                         </div>

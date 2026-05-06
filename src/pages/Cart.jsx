@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 import './style.css'
 
 
@@ -92,13 +93,13 @@ function Cart() {
                                     </li>
                                 ))}
                             </ul>
-                            <form className="address-form">
+                            <form className="address-form" onClick={placeOrder}>
                             <h3 className="address-titile">Shipping Address</h3>
                                 <input type="text" placeholder="Street" required value={street} onChange={(e) => setStreet(e.target.value)} /><br />
                                 <input type="text" placeholder="City" required value={city} onChange={(e) => setCity(e.target.value)} /><br />
                                 <input type="text" placeholder="State" required value={state} onChange={(e) => setState(e.target.value)} /><br />
                                 <input type="text" placeholder="Pincode" required value={pincode} onChange={(e) => setPincode(e.target.value)} /><br />
-                                <button type="button" onClick={placeOrder}>Place Order</button>
+                                <button type="submit">Place Order</button>
                             </form>
                         </>
                     )}
