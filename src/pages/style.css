@@ -221,6 +221,7 @@ html {
   width: 30vw;
   border-radius: 8px;
   height: 32px;
+  color: var(--text-primary);
 }
 
 .address-form input::placeholder {

@@ -32,7 +32,7 @@ function Orders() {
     <>
       <Navbar />
       <div className="container-fluid">
-      <div className="orders-page">
+      <div className="py-3 orders-page">
         <h1 className="text-center mb-5 orders-title">My Orders</h1>
 
         {orders.length === 0 ? (

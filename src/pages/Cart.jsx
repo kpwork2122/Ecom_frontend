@@ -38,6 +38,7 @@ function Cart() {
     }
 
     const placeOrder = async () => {
+         e.preventDefault(); // 🔥 THIS FIXES IT
         if (!street.trim() || !city.trim() || !state.trim() || !pincode.trim()) {
             alert("Please fill in all shipping address fields.");
             return;
@@ -47,6 +48,7 @@ function Cart() {
             alert("Order placed successfully");
             navigate("/orders")
         }catch(err){
+            console.log(err)
             alert(err.response.data.message);
         }       
     }
@@ -66,7 +68,7 @@ function Cart() {
                         <>
                             <ul className="cart-item">
                                 {cart.map(item => (
-                                    <li className="cart-list" key={item.id}>
+                                    <li className="cart-list" key={item._id}>
                                          {item.product ? (
                                                             <>
                                                                 <strong>{item.product.name}</strong> 
@@ -96,7 +98,7 @@ function Cart() {
                                 <input type="text" placeholder="City" required value={city} onChange={(e) => setCity(e.target.value)} /><br />
                                 <input type="text" placeholder="State" required value={state} onChange={(e) => setState(e.target.value)} /><br />
                                 <input type="text" placeholder="Pincode" required value={pincode} onChange={(e) => setPincode(e.target.value)} /><br />
-                                <button onClick={placeOrder}>Place Order</button>
+                                <button type="button" onClick={placeOrder}>Place Order</button>
                             </form>
                         </>
                     )}

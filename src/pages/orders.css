@@ -2,12 +2,15 @@
 
 .orders-page {
   min-height: 100vh;
+  font-family: "Inter", sans-serif;
   background-color: var(--bg-secondary);
   color: var(--text-primary);
+  padding-left: 32px;
+  padding-right: 32px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-family: "Inter", sans-serif;
 }
 .orders-title {
   color: var(--text-primary);
