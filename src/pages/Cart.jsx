@@ -93,7 +93,7 @@ function Cart() {
                                     </li>
                                 ))}
                             </ul>
-                            <form className="address-form" onClick={placeOrder}>
+                            <form className="address-form" onSubmit={placeOrder}>
                             <h3 className="address-titile">Shipping Address</h3>
                                 <input type="text" placeholder="Street" required value={street} onChange={(e) => setStreet(e.target.value)} /><br />
                                 <input type="text" placeholder="City" required value={city} onChange={(e) => setCity(e.target.value)} /><br />
