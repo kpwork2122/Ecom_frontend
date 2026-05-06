@@ -5,6 +5,7 @@ import "./orders.css";
 
 function Orders() {
   const [orders, setOrders] = useState([]);
+  const api =  import.meta.env.VITE_API_URL;
 
   const token = localStorage.getItem("token");
   const config = {

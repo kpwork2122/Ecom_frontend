@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import './style.css'
 
+
 function Cart() {
     const [cart, setCart] = useState([]);
     const [total, setTotal] = useState(0);
@@ -15,6 +16,7 @@ function Cart() {
 
     const token = localStorage.getItem("token");
     const config = {headers: {Authorization : `Bearer ${token}`}}
+     const api =  import.meta.env.VITE_API_URL;
 
     const fetchCart =  async () => {
         try{

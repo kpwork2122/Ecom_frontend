@@ -12,6 +12,7 @@ function Home() {
 
     const token= localStorage.getItem("token");
     const config = {headers: {Authorization: `Bearer ${token}`}}
+     const api =  import.meta.env.VITE_API_URL;
 
     const fetchProducts = async () => {
         try{
