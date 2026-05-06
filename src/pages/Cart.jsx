@@ -37,7 +37,7 @@ function Cart() {
         }
     }
 
-    const placeOrder = async () => {
+    const placeOrder = async (e) => {
          e.preventDefault(); // 🔥 THIS FIXES IT
         if (!street.trim() || !city.trim() || !state.trim() || !pincode.trim()) {
             alert("Please fill in all shipping address fields.");
