@@ -1,0 +1,28 @@
+:root {
+  --bg-primary: #0B1120;
+  --bg-secondary: #111827;
+  --bg-card: #1F2937;
+
+  --accent: #9DC209;          /* Limerick */
+  --accent-hover: #B7D63A;
+  --accent-dark: #7A9807;
+
+  --text-primary: #F9FAFB;
+  --text-secondary: #9CA3AF;
+
+  --border: #374151;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

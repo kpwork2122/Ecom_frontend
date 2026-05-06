@@ -1,0 +1,252 @@
+
+html {
+  scroll-behavior: smooth;
+}
+/* Product Card */
+.product-page {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.page-description {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.page-search {
+  margin-left: 28vw;
+  width: 40vw;
+}
+
+.page-search input {
+  background-color: var(--bg-primary);
+  border-color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.page-search input::placeholder {
+  color: var(--accent);
+  opacity: 0.3; /* ensures consistent appearance across browsers */
+}
+
+/* When the input is focused */
+.page-search input:focus {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--accent-hover);
+  box-shadow: 0 0 0 0.2rem rgba(157, 194, 9, 0.25);
+  outline: none;
+}
+
+.page-search button {
+  border: none;
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.page-search button:hover {
+  background-color: var(--accent-hover);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-card {
+  margin-top: 50px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  color: var(--text-primary);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--shadow);
+}
+
+/* Image */
+.product-card img {
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  margin-top: 20px;
+}
+
+/* Title */
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Description */
+.product-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  flex-grow: 1;
+}
+
+/* Footer (price + button) */
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.product-price {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.product-card button {
+  color: var(--accent);
+  border: 1px solid var(--accent-dark);
+}
+
+.product-card button:hover {
+  background-color: var(--accent-hover);
+  font-weight: 600;
+  color: rgb(31, 31, 31);
+}
+
+/* Cart page */
+.cartPage {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-title {
+  color: var(--text-primary);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.cartPage p{
+  color: var(--accent);
+}
+
+.cart-card {
+  background-color: var(--bg-card);
+  border: 1px solid #374151;
+  padding-bottom: 40px;
+  margin-top: 30px;
+  min-height: 150px;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.cart-total {
+  margin-top: 30px;
+}
+
+.cart-list button {
+  border: none;
+  background-color: transparent;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  margin-left: 6px;
+  margin: 4px;
+}
+
+.cart-list button:hover {
+  background-color: var(--accent-hover);
+  border-radius: 2px;
+  color: black;
+}
+
+.address-form {
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address-titile {
+  text-align: center;
+  padding: 10px;
+}
+
+.address-form input {
+  background-color: var(--bg-primary);
+  border-color: var(--accent);
+  transition: color 0.3s ease;
+  width: 30vw;
+  border-radius: 8px;
+  height: 32px;
+}
+
+.address-form input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.3; /* ensures consistent appearance across browsers */
+}
+
+/* When the input is focused */
+.address-form input:focus {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--accent-hover);
+  outline: none;
+}
+
+.address-form button {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-dark);
+  color: #272727;
+  width: 200px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.address-form button:hover {
+  background-color: var(--accent);
+  color: black;
+}
+

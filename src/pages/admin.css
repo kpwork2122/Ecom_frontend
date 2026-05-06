@@ -1,0 +1,143 @@
+.admin-page {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding-left: 32px;
+  padding-right: 32px;
+  font-family: "Inter", sans-serif;
+}
+
+.admin-title {
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.card.admin-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  color: var(--text-primary);
+}
+
+.card.admin-card .card-body {
+  background-color: var(--bg-card);
+}
+.admin-card .form-control,
+.admin-card .form-select {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.admin-card form input::placeholder{
+  color: var(--accent);
+  opacity: 0.4; /* ensures consistent appearance across browsers */
+}
+
+.admin-card .form-control:focus,
+.admin-card .form-select:focus {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(157, 194, 9, 0.25);
+}
+
+.admin-card button {
+  background-color: var(--accent);
+  border: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.admin-card button:hover {
+  background-color: var(--accent-hover);
+}
+.section-title {
+  color: var(--accent);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.table-dark-custom {
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--text-primary);
+  --bs-table-border-color: var(--border);
+}
+
+.table-dark-custom th {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.table-dark-custom td,
+.table-dark-custom th {
+  vertical-align: middle;
+}
+
+.status-select {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.status-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(157, 194, 9, 0.25);
+}
+
+.list-group-item.product-list-item {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  transition: all 0.3s ease;
+}
+.btn-remove{
+    background-color: transparent;
+}
+.product-list-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.product-list-item h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.product-list-item small {
+  color: var(--text-secondary) !important;
+}
+
+
+.order-row {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.order-row:hover {
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.status-text {
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.section-title {
+  color: var(--text-primary);
+  font-weight: 700;
+}

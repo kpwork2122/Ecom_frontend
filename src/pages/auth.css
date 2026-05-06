@@ -1,0 +1,73 @@
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.card.auth-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  height: 48vh auto;
+  color: var(--text-primary);
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.auth-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card.auth-card form input {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  width: 100%;
+  border: 1px solid var(--accent-dark);
+}
+
+.card.auth-card form input::placeholder {
+  color: var(--accent-dark);
+  opacity: 0.8;
+}
+
+.card.auth-card form input:focus {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--accent-hover);
+  box-shadow: 0 0 0 0.2rem rgba(157, 194, 9, 0.25);
+  outline: none;
+}
+
+p a{
+  color: var(--accent)
+}
+
+p a:hover {
+  color: var(--accent-hover);
+}
+
+.card.auth-card form button {
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--text-primary);
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card.auth-card form button:hover {
+  background-color: var(--accent-hover);
+  color: black
+}
