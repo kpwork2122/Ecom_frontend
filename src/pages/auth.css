@@ -11,7 +11,6 @@
   background-color: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 20px;
-  height: 48vh auto;
   color: var(--text-primary);
   margin-top: 100px;
   display: flex;
@@ -56,6 +55,10 @@ p a:hover {
   color: var(--accent-hover);
 }
 
+.card.auth-card form{
+  margin-bottom: 12px;
+}
+
 .card.auth-card form button {
   background-color: transparent;
   border: 1px solid var(--accent);
@@ -70,4 +73,15 @@ p a:hover {
 .card.auth-card form button:hover {
   background-color: var(--accent-hover);
   color: black
+}
+
+.card.auth-card a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.card.auth-card a:hover{
+  color: var(--accent)
 }

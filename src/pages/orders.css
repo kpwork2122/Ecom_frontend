@@ -9,15 +9,13 @@
   padding-right: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-top: 10px;
 }
 .orders-title {
   color: var(--text-primary);
   text-align: center;
-  margin-bottom: 0.5rem;
   color: var(--accent);
-  margin-top: 10px;
 }
 .card.order-card {
   background-color: var(--bg-card);
